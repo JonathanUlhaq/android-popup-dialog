@@ -35,7 +35,7 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
   <td>
 
 <pre>
-<code>
+<code class="language-java">
 SuccessDialog successDialog = new SuccessDialog(this);
 successDialog.setDialogTitle("Success");
 successDialog.setDialogMessage("Data Updated");
@@ -48,6 +48,36 @@ successDialog.show();
   </td>
   <td>
     <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif" width="300"/>
+  </td>
+</tr>
+</table>
+
+<table>
+    <tr>
+         <th>
+        Failure Dialog
+    </th>
+        <th>
+       Demo
+    </th>
+    </tr>
+<tr>
+  <td>
+
+<pre>
+<code class="language-java">
+FailureDialog failureDialog = new FailureDialog(this);
+failureDialog.setDialogTitle("Data Error");
+failureDialog.setDialogMessage("Data cannot update because internal service error");
+failureDialog.setButtonText("Close");
+failureDialog.setOnClickListener(() -> dialogg.dismiss());
+failureDialog.show();
+</code>
+</pre>
+
+  </td>
+  <td>
+    <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Failure%20Dialog.gif" width="300"/>
   </td>
 </tr>
 </table>
