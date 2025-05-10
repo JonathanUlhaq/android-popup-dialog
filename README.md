@@ -22,6 +22,8 @@ dependencyResolutionManagement {
 ...
 implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
+
+- Code implementation:
 <table>
     <tr>
          <th>
