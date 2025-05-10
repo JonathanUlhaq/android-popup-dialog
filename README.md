@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ...
 implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
-<table>
+<table style="width:100%">
     <tr>
          <th>
         Success Dialog
@@ -52,7 +52,7 @@ successDialog.show();
 </tr>
 </table>
 
-<table>
+<table style="width:100%">
     <tr>
          <th>
         Failure Dialog
