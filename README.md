@@ -23,13 +23,15 @@ dependencyResolutionManagement {
 implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
 <table>
-<tr>
-    <th>
+    <tr>
+         <th>
         Success Dialog
     </th>
         <th>
        Demo
     </th>
+    </tr>
+<tr>
   <td>
 
 <pre>
