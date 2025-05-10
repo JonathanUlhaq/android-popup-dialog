@@ -24,13 +24,11 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
  Success Dialog | Demo |
 | --- | --- |
-| 
-```
+| ```
 SuccessDialog successDialog = new SuccessDialog(this);
         successDialog.setDialogTitle("Success");
         successDialog.setDialogMessage("Data Updated");
         successDialog.setButtonText("Close");
         successDialog.setOnClickListener(() -> dialogg.dismiss());
         successDialog.show();
-```
-| ![](https://github.com/JonathanUlhaq/android-popup-dialog/blob/main/Demo%20Success%20ct.mp4) |
+``` | ![](https://github.com/JonathanUlhaq/android-popup-dialog/blob/main/Demo%20Success%20ct.mp4) |
