@@ -82,3 +82,33 @@ failureDialog.show();
 </tr>
 </table>
 
+<table >
+    <tr>
+         <th>
+        Warning Dialog
+    </th>
+        <th>
+       Demo
+    </th>
+    </tr>
+<tr>
+  <td>
+
+<pre>
+<code class="language-java">
+ WarningDialog warningDialog = new WarningDialog(this);
+warningDialog.setDialogTitle("Check Your Profile");
+warningDialog.setDialogMessage("Update your profile before tomorrow");
+warningDialog.setButtonText("Understand !");
+warningDialog.setOnClickListener(() -> dialogg.dismiss());
+warningDialog.show();
+</code>
+</pre>
+
+  </td>
+  <td>
+    <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Warning.gif" width="300"/>
+  </td>
+</tr>
+</table>
+
