@@ -34,20 +34,15 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
     </th>
     </tr>
 <tr>
-  <td>
-<pre>
-<code class="language-java">
-```java
-SuccessDialog successDialog = new SuccessDialog(this);
-successDialog.setDialogTitle("Success");
-successDialog.setDialogMessage("Data Updated");
-successDialog.setButtonText("Close");
-successDialog.setOnClickListener(successDialog::dismiss);
-successDialog.show();
-```
-</code>
-</pre>
-  </td>
+        <td>
+            ```java
+            SuccessDialog successDialog = new SuccessDialog(this);
+            successDialog.setDialogTitle("Success");
+            successDialog.setDialogMessage("Data Updated");
+            successDialog.setButtonText("Close");
+            successDialog.setOnClickListener(successDialog::dismiss);
+            successDialog.show();
+            ```
   <td>
     <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif" width="300"/>
   </td>
