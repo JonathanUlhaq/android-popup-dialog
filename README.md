@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 ...
 implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
-<table style="width:100%">
+<table">
     <tr>
          <th>
         Success Dialog
@@ -52,7 +52,7 @@ successDialog.show();
 </tr>
 </table>
 
-<table style="width:100%">
+<table >
     <tr>
          <th>
         Failure Dialog
@@ -68,7 +68,7 @@ successDialog.show();
 <code class="language-java">
 FailureDialog failureDialog = new FailureDialog(this);
 failureDialog.setDialogTitle("Data Error");
-failureDialog.setDialogMessage("Data cannot update because internal service error");
+failureDialog.setDialogMessage("Data cannot update");
 failureDialog.setButtonText("Close");
 failureDialog.setOnClickListener(() -> dialogg.dismiss());
 failureDialog.show();
