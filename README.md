@@ -5,7 +5,7 @@ The initial release of `AndroidPopUp`, is an Android library that provides Pop U
 
 📦 ## Implementation
 - Add jitpack.io to your settings.gradle:
-```
+```groovy
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -18,7 +18,7 @@ dependencyResolutionManagement {
 }
 ```
 - Add dependency to your build.gradle:
-```
+```groovy
 ...
 implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
@@ -35,14 +35,14 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
     </tr>
 <tr>
   <td>
-```java
+<code class="language-java">
 SuccessDialog successDialog = new SuccessDialog(this);
 successDialog.setDialogTitle("Success");
 successDialog.setDialogMessage("Data Updated");
 successDialog.setButtonText("Close");
 successDialog.setOnClickListener(successDialog::dismiss);
 successDialog.show();
-```
+</code>
   </td>
   <td>
     <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif" width="300"/>
