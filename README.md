@@ -1,9 +1,9 @@
-📦 # Initial Release - v1.0.0
+#Initial Release - v1.0.0
 
-🔰 ## Summary
+🔰 ##Summary
 The initial release of `AndroidPopUp`, is an Android library that provides Pop Up UI components, such as Pop Ups for Success, Failure and Warning.
 
-📦 ## Implementation
+📦 ##Implementation
 - Add jitpack.io to your settings.gradle:
 ```groovy
 dependencyResolutionManagement {
