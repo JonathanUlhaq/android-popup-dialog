@@ -22,13 +22,27 @@ dependencyResolutionManagement {
 ...
 implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 ```
-### Success Dialog
- ```
+<h3>Success Dialog</h3>
+
+<table>
+<tr>
+  <td>
+
+<pre>
+<code>
 SuccessDialog successDialog = new SuccessDialog(this);
-        successDialog.setDialogTitle("Success");
-        successDialog.setDialogMessage("Data Updated");
-        successDialog.setButtonText("Close");
-        successDialog.setOnClickListener(() -> dialogg.dismiss());
-        successDialog.show();
-```
-![Demo](https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif)
+successDialog.setDialogTitle("Success");
+successDialog.setDialogMessage("Data Updated");
+successDialog.setButtonText("Close");
+successDialog.setOnClickListener(() -> dialogg.dismiss());
+successDialog.show();
+</code>
+</pre>
+
+  </td>
+  <td>
+    <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif" width="300"/>
+  </td>
+</tr>
+</table>
+
