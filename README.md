@@ -42,7 +42,7 @@ SuccessDialog successDialog = new SuccessDialog(this);
 successDialog.setDialogTitle("Success");
 successDialog.setDialogMessage("Data Updated");
 successDialog.setButtonText("Close");
-successDialog.setOnClickListener(() -> dialogg.dismiss());
+successDialog.setOnClickListener(successDialog::dismiss);
 successDialog.show();
 </code>
 </pre>
@@ -72,7 +72,7 @@ FailureDialog failureDialog = new FailureDialog(this);
 failureDialog.setDialogTitle("Data Error");
 failureDialog.setDialogMessage("Data cannot update");
 failureDialog.setButtonText("Close");
-failureDialog.setOnClickListener(() -> dialogg.dismiss());
+failureDialog.setOnClickListener(failureDialog::dismiss);
 failureDialog.show();
 </code>
 </pre>
@@ -102,7 +102,7 @@ WarningDialog warningDialog = new WarningDialog(this);
 warningDialog.setDialogTitle("Check Your Profile");
 warningDialog.setDialogMessage("Update your profile");
 warningDialog.setButtonText("Understand !");
-warningDialog.setOnClickListener(() -> dialogg.dismiss());
+warningDialog.setOnClickListener(warningDialog::dismiss);
 warningDialog.show();
 </code>
 </pre>
