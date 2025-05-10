@@ -98,7 +98,7 @@ failureDialog.show();
 <code class="language-java">
  WarningDialog warningDialog = new WarningDialog(this);
 warningDialog.setDialogTitle("Check Your Profile");
-warningDialog.setDialogMessage("Update your profile before tomorrow");
+warningDialog.setDialogMessage("Update your profile");
 warningDialog.setButtonText("Understand !");
 warningDialog.setOnClickListener(() -> dialogg.dismiss());
 warningDialog.show();
