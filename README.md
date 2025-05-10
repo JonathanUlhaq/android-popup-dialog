@@ -25,87 +25,70 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 
 - Code implementation:
 <table>
-    <tr>
-         <th>
-        Success Dialog
-    </th>
-        <th>
-       Demo
-    </th>
-    </tr>
 <tr>
-        <td>
-            ```java
-            SuccessDialog successDialog = new SuccessDialog(this);
-            successDialog.setDialogTitle("Success");
-            successDialog.setDialogMessage("Data Updated");
-            successDialog.setButtonText("Close");
-            successDialog.setOnClickListener(successDialog::dismiss);
-            successDialog.show();
-            ```
-  <td>
-    <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif" width="300"/>
-  </td>
+<th> Success Dialog </th>
+<th> Demo </th>
+</tr>
+<tr>
+<td>
+
+```java
+SuccessDialog successDialog = new SuccessDialog(this);
+successDialog.setDialogTitle("Success");
+successDialog.setDialogMessage("Data Updated");
+successDialog.setButtonText("Close");
+successDialog.setOnClickListener(successDialog::dismiss);
+successDialog.show();
+```
+</td>
+<td>
+<img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success%20Dialog.gif" width="300"/>
+</td>
 </tr>
 </table>
 
-<table >
-    <tr>
-         <th>
-        Failure Dialog
-    </th>
-        <th>
-       Demo
-    </th>
-    </tr>
+<table>
 <tr>
-  <td>
+<th>  Failure Dialog </th>
+<th> Demo </th>
+</tr>
+<tr>
+<td>
 
-<pre>
-<code class="language-java">
+```java
 FailureDialog failureDialog = new FailureDialog(this);
 failureDialog.setDialogTitle("Data Error");
 failureDialog.setDialogMessage("Data cannot update");
 failureDialog.setButtonText("Close");
 failureDialog.setOnClickListener(failureDialog::dismiss);
 failureDialog.show();
-</code>
-</pre>
-
-  </td>
-  <td>
-    <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Failure%20Dialog.gif" width="300"/>
-  </td>
+```
+</td>
+<td>
+<img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Failure%20Dialog.gif" width="300"/>
+</td>
 </tr>
 </table>
 
-<table >
-    <tr>
-         <th>
-        Warning Dialog
-    </th>
-        <th>
-       Demo
-    </th>
-    </tr>
+<table>
 <tr>
-  <td>
+<th> Warning Dialog </th>
+<th> Demo </th>
+</tr>
+<tr>
+<td>
 
-<pre>
-<code class="language-java">
+```java
 WarningDialog warningDialog = new WarningDialog(this);
 warningDialog.setDialogTitle("Check Your Profile");
 warningDialog.setDialogMessage("Update your profile");
 warningDialog.setButtonText("Understand !");
 warningDialog.setOnClickListener(warningDialog::dismiss);
 warningDialog.show();
-</code>
-</pre>
-
-  </td>
-  <td>
-    <img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Warning.gif" width="300"/>
-  </td>
+```
+</td>
+<td>
+<img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Warning.gif" width="300"/>
+</td>
 </tr>
 </table>
-
