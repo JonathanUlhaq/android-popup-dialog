@@ -31,4 +31,4 @@ SuccessDialog successDialog = new SuccessDialog(this);
         successDialog.setOnClickListener(() -> dialogg.dismiss());
         successDialog.show();
 ```
-📹 [Demo](https://github.com/JonathanUlhaq/android-popup-dialog/blob/main/Demo%20Success.gif)
+![Demo](https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Demo%20Success.gif)
