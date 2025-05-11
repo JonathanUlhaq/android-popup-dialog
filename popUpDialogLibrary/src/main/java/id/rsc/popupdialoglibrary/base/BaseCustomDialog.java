@@ -11,12 +11,11 @@ import androidx.annotation.NonNull;
 
 public abstract class BaseCustomDialog extends Dialog {
 
-    public BaseCustomDialog(@NonNull Context context) {
+    protected BaseCustomDialog(@NonNull Context context) {
         super(context);
         initSetting(context);
-        setLottieView();
         initListener();
-        initCompoenent(context);
+        this.setOnDismissListener(v -> onDismissDialog());
     }
 
     private void initSetting(Context context) {
@@ -33,9 +32,7 @@ public abstract class BaseCustomDialog extends Dialog {
 
     abstract protected View getContentView(Context context);
 
-    abstract protected void setLottieView();
+    protected abstract void initListener();
 
-    abstract protected void initListener();
-
-    abstract protected void initCompoenent(Context context);
+    abstract protected void onDismissDialog();
 }
