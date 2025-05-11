@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_rounded_dialog"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="16dp">
@@ -15,6 +15,12 @@
         android:layout_height="100dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="false" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tvTitle"

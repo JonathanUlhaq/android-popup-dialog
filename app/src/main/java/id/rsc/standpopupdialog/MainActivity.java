@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import id.rsc.popupdialoglibrary.dialog.default_dialog.DefaultSingleDialog;
+import id.rsc.popupdialoglibrary.dialog.default_dialog.InformationDialog;
 import id.rsc.popupdialoglibrary.utils.DialogType;
 import id.rsc.standpopupdialog.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
-    DefaultSingleDialog dialogSuccess;
 
     @Override
 
@@ -19,36 +18,33 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        dialogSuccess = new DefaultSingleDialog
+        InformationDialog dialogSuccess = new InformationDialog
                 .Builder()
                 .setDialogType(DialogType.SUCCESS)
-                .setDialogTitle("Trust Me")
+                .setDialogTitle("Trust Success")
                 .setDialogMessage("Trust for success")
-                .setButtonText("Dismiss")
                 .setOnClickListener(() -> {
                 })
                 .setOnDialogDismissListener(() -> {
                 })
                 .build(this);
 
-        DefaultSingleDialog dialogFailure = new DefaultSingleDialog
+        InformationDialog dialogFailure = new InformationDialog
                 .Builder()
                 .setDialogType(DialogType.FAILURE)
-                .setDialogTitle("Trust Me")
-                .setDialogMessage("Trust for failure")
-                .setButtonText("Dismiss")
+                .setDialogTitle("Failure")
+                .setDialogMessage("Failure can't get data")
                 .setOnClickListener(() -> {
                 })
                 .setOnDialogDismissListener(() -> {
                 })
                 .build(this);
 
-        DefaultSingleDialog dialogWarning = new DefaultSingleDialog
+        InformationDialog dialogWarning = new InformationDialog
                 .Builder()
                 .setDialogType(DialogType.WARNING)
                 .setDialogTitle("Warning Title")
                 .setDialogMessage("Warning Desc")
-                .setButtonText("Dismiss")
                 .setOnClickListener(() -> {
                 })
                 .setOnDialogDismissListener(() -> {
