@@ -49,7 +49,7 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
 
 - Code implementation:
 
-[Or you can check here ](https://github.com/saadahmedscse/Android-Popup-Dialog/blob/master/BRIEF.md)
+[Or you can check here ](https://github.com/JonathanUlhaq/android-popup-dialog/blob/main/IMPLEMENTATION.md)
 
 <table>
 <tr>
