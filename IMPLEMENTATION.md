@@ -38,7 +38,7 @@ dialogWarning.show();
 InformationDialog dialogCustom = new InformationDialog
                 .Builder()
                 .setDialogIcon(R.drawable.ic_checked) // set dialog icon by drawable (int)
-                .setDialogIcon("lottie.json") // or set dialog icon by lotie.json ("string")
+                .setDialogIcon("lottie.json") // or set dialog icon by lottie.json ("string")
                 .setDialogBackground(R.drawable.grey_background)
                 .setDialogTitle("Custom Dialog")
                 .setDialogTitleColor(R.color.red)
@@ -71,7 +71,7 @@ confirmationDialog.show();
 
  ConfirmationDialog customConfirmationDialog = new ConfirmationDialog.Builder()
                 .setDialogBackground(R.drawable.bg_confirmation) 
-                .setDialogIcon("lottie.json") // set dialog icon by lotie.json ("string")
+                .setDialogIcon("lottie.json") // set dialog icon by lottie.json ("string")
                 .setDialogIcon(R.drawable.bg_icon_confirmation) // or set dialog icon by drawable (int)
                 .setDialogMessage("Are you sure to delete this data ?")
                 .setDialogMessageColor(R.color.black)
