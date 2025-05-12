@@ -1,9 +1,11 @@
 package id.rsc.popupdialoglibrary.dialog.default_dialog;
 
 import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 
 import id.rsc.popupdialoglibrary.R;
@@ -13,6 +15,7 @@ import id.rsc.popupdialoglibrary.databinding.DialogConfirmationLayoutBinding;
 import id.rsc.popupdialoglibrary.listener.OnConfirmationSubmitListener;
 import id.rsc.popupdialoglibrary.listener.OnDialogDismissListener;
 
+@RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
 public class ConfirmationDialog extends BaseCustomDialog {
 
     private DialogConfirmationLayoutBinding binding;
