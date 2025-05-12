@@ -1,5 +1,5 @@
 ```
-Min SDK         : 21 - Android LOLLIPOP {5}
+Min SDK         : 16 - Android JELLY BEAN
 Language        : Java 
 Compatible      : Java, Kotlin 
 ```
