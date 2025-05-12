@@ -1,4 +1,11 @@
-# Version 1.1.2 - Update Highlights
+```
+Min SDK         : 21 - Android LOLLIPOP {5}
+Language        : Java 
+Compatible      : Java, Kotlin 
+```
+
+
+# Version 1.1.3 - Update Highlights
 
 ## 🔰 Summary
 
