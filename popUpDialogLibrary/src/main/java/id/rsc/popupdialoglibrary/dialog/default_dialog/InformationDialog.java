@@ -1,9 +1,11 @@
 package id.rsc.popupdialoglibrary.dialog.default_dialog;
 
 import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 
 import java.util.Objects;
@@ -16,6 +18,7 @@ import id.rsc.popupdialoglibrary.listener.OnDialogDismissListener;
 import id.rsc.popupdialoglibrary.listener.OnSubmitListener;
 import id.rsc.popupdialoglibrary.utils.DialogType;
 
+@RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
 public class InformationDialog extends BaseCustomDialog {
 
     private DialogLayoutBinding binding;
