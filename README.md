@@ -1,3 +1,11 @@
+# Version 1.1.1 - Update Highlights
+
+## 🔰 Summary
+
+In this update, we add **Confirmation Dialog** feature which it support two button text action, such as positive button and negative button
+## ✨ What's New
+- ✅ Confirmation Button with two button action ( positive and negative button text )
+
 # Version 1.1.0 - Update Highlights
 
 ## 🔰 Summary
@@ -17,7 +25,7 @@ This update introduces a more flexible and expressive way to create dialogs usin
 # Initial Release - v1.0.0
 
 ## 🔰 Summary
-The initial release of `AndroidPopUp`, is an Android library that provides Pop Up UI components, such as Pop Ups for Success, Failure and Warning.
+The initial release of `AndroidPopUp`, is an Android library that provides Pop Up UI components, such as Pop Up for Success, Failure, and Warning. In addition, in this library, you can freely control the customization of the action when the dialog is dismissed or interact with the button on the dialog with the listener provided.
 
 ## 📦 Implementation
 - Add jitpack.io to your settings.gradle:
@@ -40,6 +48,8 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
 ```
 
 - Code implementation:
+[Or you can check here ](https://github.com/saadahmedscse/Android-Popup-Dialog/blob/master/BRIEF.md)
+
 <table>
 <tr>
 <th> Success Dialog </th>
@@ -124,32 +134,33 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
 </tr>
 </table>
 
-- New Customization:
+<table>
+<tr>
+<th> Confirmation Dialog </th>
+<th> Demo </th>
+</tr>
+<tr>
+<td>
+
 ```java
-.setDialogBackground(Integer drawable)
-.setDialogIcon(Integer drawable)
-.setDialogIcon(String lottieAnimationView)
-.setDialogTitleColor(Integer color)
-.setDialogMessageColor(Integer color)
-.setButtonTextColor(Integer color)
-.setButtonBackground(Integer drawable)
-```
-```java
-InformationDialog dialogCustom = new InformationDialog
-                .Builder()
-                .setDialogBackground(R.drawable.bg_rounded_dialog)
-                .setDialogIcon(R.drawable.ic_launcher_foreground)
-                .setDialogTitle("Trust Success")
-                .setDialogTitleColor(R.color.red)
-                .setDialogMessage("Trust for success")
-                .setDialogMessageColor(R.color.black)
-                .setButtonTextColor(R.color.white)
-                .setButtonBackground(R.drawable.bg_button_warning)
-                .setButtonText("Confirm")
-                .setOnClickListener(() -> {
-                })
-                .setOnDialogDismissListener(() -> {
+ConfirmationDialog confirmationDialog = new ConfirmationDialog.Builder()
+                .setDialogMessage("Are you sure to delete this data ?")
+                .setDialogTitle("Confirmation")
+                .setNegativeText("No")
+                .setPositiveText("Yes")
+                .setOnClickListener(new OnConfirmationSubmitListener() {
+                    @Override
+                    public void onPositiveClick() {}
+
+                    @Override
+                    public void onNegativeClick() {}
                 })
                 .build(this);
-dialogCustom.show();
+ confirmationDialog.show();
 ```
+</td>
+<td>
+<img src="https://github.com/JonathanUlhaq/android-popup-dialog/raw/main/Dialog%20Confirmation.gif" width="300"/>
+</td>
+</tr>
+</table>
