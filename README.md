@@ -7,11 +7,11 @@ This update introduces a more flexible and expressive way to create dialogs usin
 ## ✨ What's New
 - ✅ Fluent Builder Pattern
 - 🎨 Dialog Customizations
-- - Change dialog background drawable
+  - Change dialog background drawable
   - Change title and message text color
   - Customize button text color
   - Change dialog icon with:
-  - - **Lottie animation** via `string` json asset name
+    - **Lottie animation** via `string` json asset name
     - **Drawable Resource** via `int`
 
 # Initial Release - v1.0.0
