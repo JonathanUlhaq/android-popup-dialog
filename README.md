@@ -1,4 +1,4 @@
-# Version 1.1.1 - Update Highlights
+# Version 1.1.2 - Update Highlights
 
 ## 🔰 Summary
 
