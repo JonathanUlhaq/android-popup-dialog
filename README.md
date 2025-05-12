@@ -40,37 +40,6 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
 ```
 
 - Code implementation:
-
-- New Customization:
-```java
-.setDialogBackground(Integer drawable)
-.setDialogIcon(Integer drawable)
-.setDialogIcon(String lottieAnimationView)
-.setDialogTitleColor(Integer color)
-.setDialogMessageColor(Integer color)
-.setButtonTextColor(Integer color)
-.setButtonBackground(Integer drawable)
-```
-```java
-InformationDialog dialogCustom = new InformationDialog
-                .Builder()
-                .setDialogBackground(R.drawable.bg_rounded_dialog)
-                .setDialogIcon(R.drawable.ic_launcher_foreground)
-                .setDialogTitle("Trust Success")
-                .setDialogTitleColor(R.color.red)
-                .setDialogMessage("Trust for success")
-                .setDialogMessageColor(R.color.black)
-                .setButtonTextColor(R.color.white)
-                .setButtonBackground(R.drawable.bg_button_warning)
-                .setButtonText("Confirm")
-                .setOnClickListener(() -> {
-                })
-                .setOnDialogDismissListener(() -> {
-                })
-                .build(this);
-dialogCustom.show();
-```
-
 <table>
 <tr>
 <th> Success Dialog </th>
@@ -154,3 +123,33 @@ dialogCustom.show();
 </td>
 </tr>
 </table>
+
+- New Customization:
+```java
+.setDialogBackground(Integer drawable)
+.setDialogIcon(Integer drawable)
+.setDialogIcon(String lottieAnimationView)
+.setDialogTitleColor(Integer color)
+.setDialogMessageColor(Integer color)
+.setButtonTextColor(Integer color)
+.setButtonBackground(Integer drawable)
+```
+```java
+InformationDialog dialogCustom = new InformationDialog
+                .Builder()
+                .setDialogBackground(R.drawable.bg_rounded_dialog)
+                .setDialogIcon(R.drawable.ic_launcher_foreground)
+                .setDialogTitle("Trust Success")
+                .setDialogTitleColor(R.color.red)
+                .setDialogMessage("Trust for success")
+                .setDialogMessageColor(R.color.black)
+                .setButtonTextColor(R.color.white)
+                .setButtonBackground(R.drawable.bg_button_warning)
+                .setButtonText("Confirm")
+                .setOnClickListener(() -> {
+                })
+                .setOnDialogDismissListener(() -> {
+                })
+                .build(this);
+dialogCustom.show();
+```
