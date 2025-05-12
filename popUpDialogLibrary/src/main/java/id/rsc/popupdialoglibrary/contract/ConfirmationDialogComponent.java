@@ -1,12 +1,9 @@
 package id.rsc.popupdialoglibrary.contract;
 
+import id.rsc.popupdialoglibrary.listener.OnConfirmationSubmitListener;
 import id.rsc.popupdialoglibrary.listener.OnDialogDismissListener;
-import id.rsc.popupdialoglibrary.listener.OnSubmitListener;
-import id.rsc.popupdialoglibrary.utils.DialogType;
 
-public interface InformationDialogComponent<T extends InformationDialogComponent> {
-    public T setDialogType(DialogType dialogType);
-
+public interface ConfirmationDialogComponent<T extends ConfirmationDialogComponent> {
     public T setDialogBackground(Integer drawable);
 
     public T setDialogIcon(Integer drawable);
@@ -21,14 +18,15 @@ public interface InformationDialogComponent<T extends InformationDialogComponent
 
     public T setDialogMessageColor(Integer color);
 
-    public T setButtonText(String text);
+    public T setPositiveText(String text);
 
-    public T setButtonTextColor(Integer color);
+    public T setPositiveTextColor(Integer color);
 
-    public T setButtonBackground(Integer drawable);
+    public T setNegativeText(String text);
 
+    public T setNegativeTextColor(Integer color);
 
-    public T setOnClickListener(OnSubmitListener listener);
+    public T setOnClickListener(OnConfirmationSubmitListener listener);
 
     public T setOnDialogDismissListener(OnDialogDismissListener listener);
 }

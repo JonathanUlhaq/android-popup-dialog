@@ -23,16 +23,24 @@ public abstract class BaseCustomDialog extends Dialog {
 
         if (getWindow() != null) {
             getWindow().setLayout(
-                    (int) (context.getResources().getDisplayMetrics().widthPixels * 0.80),
+                    (int) (context.getResources().getDisplayMetrics().widthPixels * 0.90),
                     ViewGroup.LayoutParams.WRAP_CONTENT
             );
             getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
     }
 
-    abstract protected View getContentView(Context context);
+    protected abstract View getContentView(Context context);
 
     protected abstract void initListener();
 
-    abstract protected void onDismissDialog();
+    protected abstract void onDismissDialog();
+
+    protected String safeString(String inputText, String defaultText) {
+        return inputText != null ? inputText : defaultText;
+    }
+
+    protected Integer safeInteger(Integer inputInt, Integer defaultInt) {
+        return inputInt != null ? inputInt : defaultInt;
+    }
 }

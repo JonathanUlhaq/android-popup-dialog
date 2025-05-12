@@ -280,14 +280,6 @@ public class InformationDialog extends BaseCustomDialog {
         }
     }
 
-    private String safeString(String inputText, String defaultText) {
-        return inputText != null ? inputText : defaultText;
-    }
-
-    private Integer safeInteger(Integer inputInt, Integer defaultInt) {
-        return inputInt != null ? inputInt : defaultInt;
-    }
-
     @Override
     protected void onDismissDialog() {
         if (dismissListener != null) {
