@@ -83,12 +83,14 @@ public class InformationDialog extends BaseCustomDialog {
         @Override
         public Builder setDialogIcon(Integer drawable) {
             this.dialogIcon = drawable;
+            this.dialogLottieIcon = null;
             return this;
         }
 
         @Override
         public Builder setDialogIcon(String lottieAnimationView) {
             this.dialogLottieIcon = lottieAnimationView;
+            this.dialogIcon = null;
             return this;
         }
 
