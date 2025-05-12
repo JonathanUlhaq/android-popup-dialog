@@ -1,25 +1,29 @@
+# 👋 Welcome to android-popup-dialog
+android-popup-dialog is a lightweight and customizable Android library for displaying modern alert dialogs. It supports various dialog types, including Success, Failure, Warning, and the newly introduced Confirmation Dialog with two action buttons — positive and negative.
+
+This release adds more flexibility for user interactions, especially in decision-based flows, while maintaining simplicity in usage.
+
 ```
 Min SDK         : 16 - Android JELLY BEAN
 Language        : Java 
 Compatible      : Java, Kotlin 
 ```
 
+## Version 1.1.3 - Update Highlights
 
-# Version 1.1.3 - Update Highlights
-
-## 🔰 Summary
+### 🔰 Summary
 
 In this update, we add **Confirmation Dialog** feature which it support two button text action, such as positive button and negative button
-## ✨ What's New
+### ✨ What's New
 - ✅ Confirmation Button with two button action ( positive and negative button text )
 
-# Version 1.1.0 - Update Highlights
+## Version 1.1.0 - Update Highlights
 
-## 🔰 Summary
+### 🔰 Summary
 
 This update introduces a more flexible and expressive way to create dialogs using the Fluent Builder pattern, along with several customization options to enhance your UI/UX.
 
-## ✨ What's New
+### ✨ What's New
 - ✅ Fluent Builder Pattern
 - 🎨 Dialog Customizations
   - Change dialog background drawable
@@ -29,12 +33,12 @@ This update introduces a more flexible and expressive way to create dialogs usin
     - **Lottie animation** via `string` json asset name
     - **Drawable Resource** via `int`
 
-# Initial Release - v1.0.0
+## Initial Release - v1.0.0
 
-## 🔰 Summary
+### 🔰 Summary
 The initial release of `AndroidPopUp`, is an Android library that provides Pop Up UI components, such as Pop Up for Success, Failure, and Warning. In addition, in this library, you can freely control the customization of the action when the dialog is dismissed or interact with the button on the dialog with the listener provided.
 
-## 📦 Implementation
+### 📦 Implementation
 - Add jitpack.io to your settings.gradle:
 ```groovy
 dependencyResolutionManagement {
