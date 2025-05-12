@@ -1,3 +1,50 @@
+# Version 1.1.0 - Update Highlights
+
+## 🔰 Summary
+
+This update introduces a more flexible and expressive way to create dialogs using the Fluent Builder pattern, along with several customization options to enhance your UI/UX.
+
+## ✨ What's New
+- ✅ Fluent Builder Pattern
+- 🎨 Dialog Customizations
+- - Change dialog background drawable
+  - Change title and message text color
+  - Customize button text color
+  - Change dialog icon with:
+  - - **Lottie animation** via `string` json asset name
+    - **Drawable Resource** via `int`
+
+## 📦 Implementation
+- New Customization:
+```java
+.setDialogBackground(Integer drawable)
+.setDialogIcon(Integer drawable)
+.setDialogIcon(String lottieAnimationView)
+.setDialogTitleColor(Integer color)
+.setDialogMessageColor(Integer color)
+.setButtonTextColor(Integer color)
+.setButtonBackground(Integer drawable)
+```
+```java
+InformationDialog dialogCustom = new InformationDialog
+                .Builder()
+                .setDialogBackground(R.drawable.bg_rounded_dialog)
+                .setDialogIcon(R.drawable.ic_launcher_foreground)
+                .setDialogTitle("Trust Success")
+                .setDialogTitleColor(R.color.red)
+                .setDialogMessage("Trust for success")
+                .setDialogMessageColor(R.color.black)
+                .setButtonTextColor(R.color.white)
+                .setButtonBackground(R.drawable.bg_button_warning)
+                .setButtonText("Confirm")
+                .setOnClickListener(() -> {
+                })
+                .setOnDialogDismissListener(() -> {
+                })
+                .build(this);
+dialogCustom.show();
+```
+
 # Initial Release - v1.0.0
 
 ## 🔰 Summary
@@ -20,7 +67,7 @@ dependencyResolutionManagement {
 - Add dependency to your build.gradle:
 ```groovy
 ...
-implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
+implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
 ```
 
 - Code implementation:
@@ -33,12 +80,17 @@ implementation "com.github.JonathanUlhaq:android-popup-dialog:1.0.0"
 <td>
 
 ```java
-SuccessDialog successDialog = new SuccessDialog(this);
-successDialog.setDialogTitle("Success");
-successDialog.setDialogMessage("Data Updated");
-successDialog.setButtonText("Close");
-successDialog.setOnClickListener(successDialog::dismiss);
-successDialog.show();
+        InformationDialog dialogSuccess = new InformationDialog
+                .Builder()
+                .setDialogType(DialogType.SUCCESS)
+                .setDialogTitle("Trust Success")
+                .setDialogMessage("Trust for success")
+                .setOnClickListener(() -> {
+                })
+                .setOnDialogDismissListener(() -> {
+                })
+                .build(this);
+        dialogSuccess.show()
 ```
 </td>
 <td>
@@ -56,12 +108,17 @@ successDialog.show();
 <td>
 
 ```java
-FailureDialog failureDialog = new FailureDialog(this);
-failureDialog.setDialogTitle("Data Error");
-failureDialog.setDialogMessage("Data cannot update");
-failureDialog.setButtonText("Close");
-failureDialog.setOnClickListener(failureDialog::dismiss);
-failureDialog.show();
+        InformationDialog dialogFailure = new InformationDialog
+                .Builder()
+                .setDialogType(DialogType.FAILURE)
+                .setDialogTitle("Failure")
+                .setDialogMessage("Failure can't get data")
+                .setOnClickListener(() -> {
+                })
+                .setOnDialogDismissListener(() -> {
+                })
+                .build(this);
+        dialogFailure.show()
 ```
 </td>
 <td>
@@ -79,12 +136,17 @@ failureDialog.show();
 <td>
 
 ```java
-WarningDialog warningDialog = new WarningDialog(this);
-warningDialog.setDialogTitle("Check Your Profile");
-warningDialog.setDialogMessage("Update your profile");
-warningDialog.setButtonText("Understand !");
-warningDialog.setOnClickListener(warningDialog::dismiss);
-warningDialog.show();
+        InformationDialog dialogWarning = new InformationDialog
+                .Builder()
+                .setDialogType(DialogType.WARNING)
+                .setDialogTitle("Warning Title")
+                .setDialogMessage("Warning Desc")
+                .setOnClickListener(() -> {
+                })
+                .setOnDialogDismissListener(() -> {
+                })
+                .build(this);
+        dialogWarning.show()
 ```
 </td>
 <td>
