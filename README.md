@@ -14,7 +14,33 @@ This update introduces a more flexible and expressive way to create dialogs usin
   - - **Lottie animation** via `string` json asset name
     - **Drawable Resource** via `int`
 
+# Initial Release - v1.0.0
+
+## 🔰 Summary
+The initial release of `AndroidPopUp`, is an Android library that provides Pop Up UI components, such as Pop Ups for Success, Failure and Warning.
+
 ## 📦 Implementation
+- Add jitpack.io to your settings.gradle:
+```groovy
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = "https://jitpack.io"
+        }
+    }
+}
+```
+- Add dependency to your build.gradle:
+```groovy
+...
+implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
+```
+
+- Code implementation:
+
 - New Customization:
 ```java
 .setDialogBackground(Integer drawable)
@@ -45,32 +71,6 @@ InformationDialog dialogCustom = new InformationDialog
 dialogCustom.show();
 ```
 
-# Initial Release - v1.0.0
-
-## 🔰 Summary
-The initial release of `AndroidPopUp`, is an Android library that provides Pop Up UI components, such as Pop Ups for Success, Failure and Warning.
-
-## 📦 Implementation
-- Add jitpack.io to your settings.gradle:
-```groovy
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven {
-            url = "https://jitpack.io"
-        }
-    }
-}
-```
-- Add dependency to your build.gradle:
-```groovy
-...
-implementation "com.github.JonathanUlhaq:android-popup-dialog:1.1.0"
-```
-
-- Code implementation:
 <table>
 <tr>
 <th> Success Dialog </th>
